@@ -269,7 +269,7 @@ def pilih_passxd():
                                 oke.write('\n[OK] '+user+' • '+pass1)
                                 oke.close()
                                 oks.append(user+pass1)
-                        else :
+                        else:
                                 if 'checkpoint' in xo:
 	                                print '\x1b[0;33m   [CP] '+user+' • '+pass1+' • '+tl
                                         cek = open('done/Indo.txt', 'a')
@@ -399,7 +399,7 @@ def pilih_passxd():
         print ("\033[1;96m[•] \033[1;93mHasil Crack")
         print "\033[1;96m[✓] \033[1;34mTotal OK : \033[1;34m"+str(len(oks))
         print "\033[1;96m[✓] \033[1;93mTotal CP : \033[1;93m"+str(len(cekpoint))
-        print ("\033[1;96m[✓] \033[1;97mFile Tersimpan : \033[1;31mupil/crack.txt")
+        print ("\033[1;96m[✓] \033[1;97mFile Tersimpan : \033[1;31done/Indo.txt")
         raw_input("\033[1;96m[ Kembali ]")
         os.system("python2 fbc")
 	menu()
